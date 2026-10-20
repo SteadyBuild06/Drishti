@@ -1,0 +1,10 @@
+:root { color-scheme: dark; } body { background:#07111f; }
+    .panel { background:rgba(15,28,47,.93); border:1px solid #28415f; box-shadow:0 20px 55px rgba(0,0,0,.22) }
+    .nav-link { border-left:3px solid transparent; } .nav-link.active { background:#163758; border-left-color:#37d2ff; color:white }
+    .dropzone { border:2px dashed #426889; transition:.2s; } .dropzone:hover,.dropzone.drag { border-color:#37d2ff; background:#0e2944 }
+    .twin-layer { position:absolute; inset:0; overflow:hidden; border-radius:.75rem; }
+    .pin { position:absolute; transform:translate(-50%,-50%); width:26px; height:26px; border:3px solid white; border-radius:999px; color:#06101d; font-weight:900; font-size:12px; display:grid; place-items:center; box-shadow:0 0 0 5px rgba(255,255,255,.16); cursor:pointer; }
+    .pin-valve { background:#f87171; }.pin-joint { background:#fbbf24; }.pin-supply { background:#38bdf8; }.pin-leak { background:#fb7185; animation:pulse 1.3s infinite; }
+    @keyframes pulse { 50% { transform:translate(-50%,-50%) scale(1.17); box-shadow:0 0 0 11px rgba(251,113,133,0); } }
+    .gridline { background-image:linear-gradient(rgba(56,189,248,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,.055) 1px,transparent 1px); background-size:24px 24px; }
+    .step-active { border-color:#38bdf8; background:linear-gradient(90deg,rgba(14,116,144,.27),rgba(15,28,47,.8)); }
